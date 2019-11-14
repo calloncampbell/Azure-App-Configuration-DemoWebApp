@@ -9,13 +9,14 @@
 
 <style>
     body {
-        background-color: @Configuration["WebDemo:Settings:BackgroundColor"]
+        background-color: @Model.Settings.BackgroundColor
     }
     h1 {
-        font-size: @Configuration["WebDemo:Settings:FontSize"]
+        font-size: @Model.Settings.FontSize
     }
 </style>
 
 <div class="text-center">
-    <h1>@Configuration["WebDemo:Settings:Message"]</h1>
+    <h1>@Model.Settings.Message</h1>
 </div>
+

@@ -22,6 +22,9 @@ namespace AzureAppConfig_WebApp
 
         public void ConfigureServices(IServiceCollection services)
         {
+            // Add a Settings model to the service container, which gets its values from the application config
+            services.Configure<Settings>(Configuration.GetSection("WebDemo:Settings"));
+
             services.AddRazorPages();
         }
 
