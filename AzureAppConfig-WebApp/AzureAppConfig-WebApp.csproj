@@ -3,10 +3,11 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <RootNamespace>AzureAppConfig_WebApp</RootNamespace>
+    <UserSecretsId>9b149827-7074-4ac3-a899-0ebe18b39fe2</UserSecretsId>
   </PropertyGroup>
 
-
   <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.AppConfiguration.AspNetCore" Version="2.1.0-preview-010380003-1338" />
   </ItemGroup>
 
 </Project>
