@@ -1,0 +1,14 @@
+{
+    "WebDemo": {
+        "Sentinel": 0,
+        "Settings": {
+            "AppName": "Azure App Configuration Demo",
+            "BackgroundColor": "Orange",
+            "FontSize": 30,
+            "Language": "English",
+            "Message": "Hello from Azure App Configuration!",
+            "RefreshRate": 1000,
+            "Version": 1
+        }
+    }
+}
