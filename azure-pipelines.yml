@@ -15,7 +15,16 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
+- task: AzureAppConfiguration@1
+  inputs:
+    azureSubscription: 'MVP (Visual Studio Enterprise)(3)(7a58fe32-c6d6-4cba-a1aa-1f378bc22eb9)'
+    ConfigstoreName: MetroConfig
+    KeyFilter: '*'
 
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: 'echo $env.Message'
 - task: NuGetToolInstaller@1
 
 - task: NuGetCommand@2
