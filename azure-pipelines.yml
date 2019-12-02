@@ -24,7 +24,7 @@ steps:
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
-    script: 'echo $env.Message'
+    script: 'echo $env:Message'
     
 - task: NuGetToolInstaller@1
 
